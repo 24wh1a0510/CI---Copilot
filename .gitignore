@@ -1,0 +1,86 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+*.pem
+*.key
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── Test / Coverage ───────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ── Hindsight Memory data (runtime, not source) ───────────────────────────────
+data/memory/
+data/audit_logs/
+data/briefing_results/
+data/briefing_history.json
+data/watchlists.json
+data/reports/
+
+# Keep the memory directory itself tracked (empty placeholder)
+!data/memory/.gitkeep
+!data/audit_logs/.gitkeep
+!data/briefing_results/.gitkeep
+!data/reports/.gitkeep
+
+# ── User data ────────────────────────────────────────────────────────────────
+data/users.yaml
+
+# ── Frontend build artifacts ──────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Build / dist ──────────────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ── Playwright ────────────────────────────────────────────────────────────────
+playwright/.auth/
+test-results/
+playwright-report/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+*.jsonl
+
+# Keep sample audit log structure if needed
+!data/audit_logs/.gitkeep
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+*.bak
+*.tmp
